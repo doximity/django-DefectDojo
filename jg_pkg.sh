@@ -7,3 +7,4 @@ mkdir -p build
 helm package helm/defectdojo/ --destination ./build
 cp build/* .
 git add -f ./*.tgz
+sha1sum *.tgz
